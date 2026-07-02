@@ -1,0 +1,12 @@
+# OS / editor cruft
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+
+# temp scripts
+_*.ps1
+
+# keep original logo backup local (optional to commit)
+# assets/logo_original.png

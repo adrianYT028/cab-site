@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keshav Taxi — Jamnagar to Dwarka & Somnath Tour | Premium Cab Service</title>
+  <meta name="description" content="Keshav Taxi offers premium, reliable cab service from Jamnagar to Dwarka, Somnath and across Gujarat. Book Swift Dzire, Ertiga, Innova Crysta, Tempo Traveller & Urbania. Call 8140230020." />
+  <meta name="keywords" content="Jamnagar taxi, Dwarka tour, Somnath tour, Keshav Taxi, cab service Jamnagar, Gujarat taxi, Innova Crysta rental" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script>
+    (function () {
+      try {
+        var k = 'keshav-theme', s = localStorage.getItem(k);
+        var t = s || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Keshav Taxi — Jamnagar to Dwarka & Somnath Tour" />
+  <meta property="og:description" content="Premium cab service for Dwarka & Somnath pilgrimage tours from Jamnagar." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Film grain texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">
+      <span class="kt">KT</span>
+      <div class="preloader__road"><span></span></div>
+      <p class="preloader__text">KESHAV&nbsp;TAXI</p>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Scroll-following cab (journey indicator) -->
+  <div class="scroll-road" id="scrollRoad" aria-hidden="true">
+    <div class="scroll-cab" id="scrollCab">
+      <svg viewBox="0 0 28 46" width="26" height="43">
+        <rect class="sc-mirror" x="1.5" y="17" width="3.2" height="5.5" rx="1.6"/>
+        <rect class="sc-mirror" x="23.3" y="17" width="3.2" height="5.5" rx="1.6"/>
+        <rect class="sc-body" x="4" y="2.5" width="20" height="41" rx="7.5"/>
+        <path class="sc-win" d="M8 8.5h12l-1.4 5.2c-.2.7-.7 1-1.4 1H10.8c-.7 0-1.2-.3-1.4-1z"/>
+        <path class="sc-win" d="M9 39.5l-1.2-4.4c-.2-.7.1-1.1.8-1.1h10.8c.7 0 1 .4.8 1.1L19 39.5c-.2.6-.6.9-1.3.9h-7.4c-.7 0-1.1-.3-1.3-.9z"/>
+        <rect class="sc-sign" x="9.5" y="19.5" width="9" height="5.5" rx="1.4"/>
+        <circle class="sc-light" cx="8.5" cy="41.5" r="1"/>
+        <circle class="sc-light" cx="19.5" cy="41.5" r="1"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Top utility bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="topbar__item"><i data-ic="pin"></i> Jamnagar, Gujarat</span>
+        <span class="topbar__sep"></span>
+        <span class="topbar__item topbar__hours"><i data-ic="clock"></i> Available 24 &times; 7</span>
+      </div>
+      <div class="topbar__right">
+        <a href="mailto:booking@keshavtaxi.in" class="topbar__item"><i data-ic="mail"></i> booking@keshavtaxi.in</a>
+        <span class="topbar__sep"></span>
+        <a href="tel:+918140230020" class="topbar__item topbar__phone"><i data-ic="phone"></i> +91 81402 30020</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" data-cursor="hover">
+        <img src="assets/logo.png" alt="Keshav Taxi" class="brand__logo" onerror="this.remove()" />
+        <span class="brand__badge" aria-hidden="true">
+          <svg viewBox="0 0 64 40" class="brand__car">
+            <path class="brand__car-body" d="M4 28c0-4 3-6 8-7l6-8c1.5-2 4-3 7-3h13c4 0 7 2 9 5l4 6c5 .8 9 3 9 7v3c0 1.6-1.4 3-3 3h-3a7 7 0 0 1-14 0H28a7 7 0 0 1-14 0h-6c-2.2 0-4-1.8-4-4z"/>
+            <circle class="brand__wheel" cx="21" cy="31" r="4.2"/>
+            <circle class="brand__wheel" cx="48" cy="31" r="4.2"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>KESHAV</strong>
+          <em>TAXI</em>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link" data-cursor="hover">Home</a>
+        <a href="#services" class="nav__link" data-cursor="hover">Services</a>
+        <a href="#packages" class="nav__link" data-cursor="hover">Tours</a>
+        <a href="#fleet" class="nav__link" data-cursor="hover">Fleet</a>
+        <a href="#fares" class="nav__link" data-cursor="hover">Fares</a>
+        <a href="#book" class="nav__link" data-cursor="hover">Contact</a>
+        <a href="tel:+918140230020" class="btn btn--pill nav__cta">
+          <i data-ic="phone"></i> Book Now
+        </a>
+      </nav>
+
+      <div class="nav__ctrls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch light / dark theme" title="Switch theme">
+          <i data-ic="sun"></i>
+          <i data-ic="moon"></i>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg" data-parallax="0.25"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__grid"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="pill pill--glow reveal"><span class="pill__dot"></span> Jamnagar's Trusted Cab Partner</span>
+        <h1 class="hero__title">
+          <span class="reveal" data-d="1">Your Journey to</span>
+          <span class="reveal hero__accent" data-d="2">Dwarka &amp; Somnath</span>
+          <span class="reveal" data-d="3">Begins Here.</span>
+        </h1>
+        <p class="hero__sub reveal" data-d="4">
+          Comfortable, safe and on-time taxi service for pilgrimage &amp; leisure tours across
+          Gujarat. Clean cars, expert local drivers, transparent fares — every single ride.
+        </p>
+
+        <div class="hero__actions reveal" data-d="5">
+          <a href="#book" class="btn btn--primary" data-magnetic data-cursor="hover">
+            Plan My Trip <i data-ic="arrow"></i>
+          </a>
+          <a class="btn btn--ghost wa-link" data-msg="Hi Keshav Taxi, I'd like to enquire about a Dwarka–Somnath tour." data-cursor="hover">
+            <i data-ic="whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+
+        <div class="hero__trust reveal" data-d="6">
+          <div class="hero__avatars">
+            <span>4.9</span>
+          </div>
+          <p>Rated <strong>4.9/5</strong> by 1200+ happy travellers</p>
+        </div>
+      </div>
+
+      <!-- Floating quick-quote card -->
+      <div class="quote-card reveal" data-d="4">
+        <div class="quote-card__head">
+          <span class="quote-card__dot"></span>
+          <h3>Get an Instant Quote</h3>
+        </div>
+        <form class="quote-card__form" id="quickForm">
+          <div class="field">
+            <label>Pickup</label>
+            <div class="field__box"><i data-ic="pin"></i>
+              <input type="text" name="from" value="Jamnagar" required />
+            </div>
+          </div>
+          <div class="field">
+            <label>Destination</label>
+            <div class="field__box"><i data-ic="flag"></i>
+              <select name="to" required>
+                <option>Dwarka</option>
+                <option>Somnath</option>
+                <option>Dwarka + Somnath (Combined)</option>
+                <option>Nageshwar &amp; Bet Dwarka</option>
+                <option>Gir National Park</option>
+                <option>Other / Custom Trip</option>
+              </select>
+            </div>
+          </div>
+          <div class="field field--half-row">
+            <div class="field">
+              <label>Car</label>
+              <div class="field__box"><i data-ic="car"></i>
+                <select name="car">
+                  <option>Swift Dzire</option>
+                  <option>Ertiga (New)</option>
+                  <option>Innova Crysta</option>
+                  <option>Tempo Traveller</option>
+                  <option>Urbania</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label>Date</label>
+              <div class="field__box"><i data-ic="cal"></i>
+                <input type="date" name="date" />
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-cursor="hover">
+            Check Fare on WhatsApp <i data-ic="whatsapp"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span class="hero__mouse"><span></span></span>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- Moving road marquee -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>DWARKADHISH TEMPLE</span><i>•</i>
+      <span>SOMNATH JYOTIRLINGA</span><i>•</i>
+      <span>NAGESHWAR</span><i>•</i>
+      <span>BET DWARKA</span><i>•</i>
+      <span>GIR SAFARI</span><i>•</i>
+      <span>PORBANDAR</span><i>•</i>
+      <span>DWARKADHISH TEMPLE</span><i>•</i>
+      <span>SOMNATH JYOTIRLINGA</span><i>•</i>
+      <span>NAGESHWAR</span><i>•</i>
+      <span>BET DWARKA</span><i>•</i>
+      <span>GIR SAFARI</span><i>•</i>
+      <span>PORBANDAR</span><i>•</i>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat reveal">
+        <span class="stat__num" data-count="12">0</span><span class="stat__suffix">+</span>
+        <p>Years on the Road</p>
+      </div>
+      <div class="stat reveal" data-d="2">
+        <span class="stat__num" data-count="48000">0</span><span class="stat__suffix">+</span>
+        <p>Trips Completed</p>
+      </div>
+      <div class="stat reveal" data-d="3">
+        <span class="stat__num" data-count="1200">0</span><span class="stat__suffix">+</span>
+        <p>5-Star Reviews</p>
+      </div>
+      <div class="stat reveal" data-d="4">
+        <span class="stat__num" data-count="24">0</span><span class="stat__suffix">/7</span>
+        <p>Always Available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">What We Offer</span>
+        <h2 class="section__title reveal" data-d="2">Cab Services Tailored to You</h2>
+        <p class="section__lead reveal" data-d="3">
+          From quick airport runs to multi-day pilgrimage yatras — one dependable partner for
+          every kind of journey across Gujarat.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <article class="svc reveal" data-cursor="hover">
+          <span class="svc__ic"><i data-ic="route"></i></span>
+          <h3>One-Way Outstation</h3>
+          <p>Intercity drops anywhere in Gujarat. Pay only for the distance you travel — no return fare.</p>
+        </article>
+        <article class="svc reveal" data-d="2" data-cursor="hover">
+          <span class="svc__ic"><i data-ic="car"></i></span>
+          <h3>Round-Trip Cabs</h3>
+          <p>Weekend getaways and return journeys with flexible itineraries and friendly rates.</p>
+        </article>
+        <article class="svc reveal" data-d="3" data-cursor="hover">
+          <span class="svc__ic"><i data-ic="star"></i></span>
+          <h3>Pilgrimage Tours</h3>
+          <p>Guided Dwarka, Somnath, Nageshwar &amp; Bet Dwarka circuits with experienced drivers.</p>
+        </article>
+        <article class="svc reveal" data-cursor="hover">
+          <span class="svc__ic"><i data-ic="pin"></i></span>
+          <h3>Local Sightseeing</h3>
+          <p>Explore Jamnagar, the Gir forest, Porbandar beaches and nearby heritage at your pace.</p>
+        </article>
+        <article class="svc reveal" data-d="2" data-cursor="hover">
+          <span class="svc__ic"><i data-ic="flag"></i></span>
+          <h3>Airport Transfers</h3>
+          <p>Punctual pickups &amp; drops to Rajkot (Hirasar) and Jamnagar airports, day or night.</p>
+        </article>
+        <article class="svc reveal" data-d="3" data-cursor="hover">
+          <span class="svc__ic"><i data-ic="shield"></i></span>
+          <h3>Corporate Travel</h3>
+          <p>Reliable staff transport and business travel with monthly billing options available.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="section packages" id="packages">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Signature Journeys</span>
+        <h2 class="section__title reveal" data-d="2">Popular Tour Packages</h2>
+        <p class="section__lead reveal" data-d="3">
+          Hand-crafted pilgrimage circuits with fixed, honest pricing. Choose a route or ask us to
+          build a custom itinerary just for you.
+        </p>
+      </div>
+
+      <div class="pkg-grid">
+        <article class="pkg reveal" data-tilt>
+          <div class="pkg__img pkg__img--dwarka">
+            <img src="assets/tours/dwarka.jpg" alt="Dwarkadhish Temple, Dwarka" loading="lazy" />
+            <span class="pkg__tag">Most Popular</span>
+          </div>
+          <div class="pkg__body">
+            <h3>Jamnagar → Dwarka</h3>
+            <p>Darshan at Dwarkadhish Temple, Nageshwar Jyotirlinga &amp; Bet Dwarka. One-day comfort tour.</p>
+            <ul class="pkg__meta">
+              <li><i data-ic="route"></i> ~145 km</li>
+              <li><i data-ic="clock"></i> 1 Day</li>
+            </ul>
+            <div class="pkg__foot">
+              <span class="pkg__price"><small>from</small> ₹2,800</span>
+              <a class="btn btn--sm wa-link" data-msg="Hi, I want to book the Jamnagar to Dwarka one-day tour." data-cursor="hover">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg reveal" data-d="2" data-tilt>
+          <div class="pkg__img pkg__img--somnath">
+            <img src="assets/tours/somnath.jpg" alt="Somnath Jyotirlinga Temple" loading="lazy" />
+            <span class="pkg__tag">Devotional</span>
+          </div>
+          <div class="pkg__body">
+            <h3>Jamnagar → Somnath</h3>
+            <p>Visit the first Jyotirlinga, Bhalka Tirth &amp; Triveni Sangam with a relaxed, scenic drive.</p>
+            <ul class="pkg__meta">
+              <li><i data-ic="route"></i> ~230 km</li>
+              <li><i data-ic="clock"></i> 1–2 Days</li>
+            </ul>
+            <div class="pkg__foot">
+              <span class="pkg__price"><small>from</small> ₹4,200</span>
+              <a class="btn btn--sm wa-link" data-msg="Hi, I want to book the Jamnagar to Somnath tour." data-cursor="hover">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg pkg--feature reveal" data-d="3" data-tilt>
+          <div class="pkg__img pkg__img--combo">
+            <img src="assets/tours/combo.jpg" alt="Dwarka and Somnath pilgrimage circuit" loading="lazy" />
+            <span class="pkg__tag pkg__tag--hot">★ Best Value</span>
+          </div>
+          <div class="pkg__body">
+            <h3>Dwarka + Somnath Circuit</h3>
+            <p>The complete pilgrimage — Dwarka, Nageshwar, Bet Dwarka &amp; Somnath. Fully guided round trip.</p>
+            <ul class="pkg__meta">
+              <li><i data-ic="route"></i> ~450 km</li>
+              <li><i data-ic="clock"></i> 2–3 Days</li>
+            </ul>
+            <div class="pkg__foot">
+              <span class="pkg__price"><small>from</small> ₹8,500</span>
+              <a class="btn btn--sm btn--primary wa-link" data-msg="Hi, I want to book the Dwarka + Somnath combined circuit." data-cursor="hover">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTE MAP -->
+  <section class="section route">
+    <div class="container route__inner">
+      <div class="route__text">
+        <span class="eyebrow reveal">The Sacred Circuit</span>
+        <h2 class="section__title reveal" data-d="2">One Trip, Every Blessing</h2>
+        <p class="section__lead reveal" data-d="3">
+          Follow the divine trail across Saurashtra. We handle the driving, the routes and the
+          timing — you focus on the darshan.
+        </p>
+        <a href="#book" class="btn btn--primary reveal" data-d="4" data-magnetic data-cursor="hover">Design My Route <i data-ic="arrow"></i></a>
+      </div>
+
+      <div class="route__map reveal" data-d="2">
+        <svg viewBox="0 0 400 320" class="route__svg" preserveAspectRatio="xMidYMid meet">
+          <path id="routePath" class="route__line" d="M60 70 C 140 40, 180 130, 130 180 S 240 260, 320 250 S 360 160, 330 110" />
+          <g class="route__stops">
+            <g class="route__stop" style="--i:0"><circle cx="60" cy="70" r="7"/><text x="60" y="52">Jamnagar</text></g>
+            <g class="route__stop" style="--i:1"><circle cx="130" cy="180" r="7"/><text x="130" y="205">Dwarka</text></g>
+            <g class="route__stop" style="--i:2"><circle cx="320" cy="250" r="7"/><text x="320" y="275">Somnath</text></g>
+            <g class="route__stop" style="--i:3"><circle cx="330" cy="110" r="7"/><text x="330" y="95">Gir</text></g>
+          </g>
+          <g class="route__cab" id="routeCab">
+            <circle r="13" class="route__cab-glow"/>
+            <g transform="translate(-11,-6)">
+              <path class="route__cab-body" d="M1 12c0-1.6 1.3-2.5 3-3l4-4c1-1 2.2-1.6 3.6-1.6h6.4c2 0 3.4.8 4.4 2.2l1.8 2.8c2 .3 3.4 1.2 3.4 2.6v1.2c0 .6-.5 1-1 1h-1.4a2.7 2.7 0 0 1-5.4 0H9.4a2.7 2.7 0 0 1-5.4 0H2c-.7 0-1-.5-1-1z"/>
+              <circle class="route__cab-wheel" cx="7" cy="12.6" r="2.1"/>
+              <circle class="route__cab-wheel" cx="19.5" cy="12.6" r="2.1"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section class="section fleet" id="fleet">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Choose Your Ride</span>
+        <h2 class="section__title reveal" data-d="2">Our Premium Fleet</h2>
+        <p class="section__lead reveal" data-d="3">
+          Every vehicle is sanitised, insured and driven by a verified, courteous chauffeur who
+          knows every temple town on the map.
+        </p>
+      </div>
+
+      <div class="fleet__grid">
+        <article class="car reveal" data-cursor="hover">
+          <div class="car__photo">
+            <img src="assets/fleet/dzire.jpg" alt="Maruti Swift Dzire sedan" loading="lazy" />
+            <span class="car__type">Sedan</span>
+            <span class="car__seats"><i data-ic="user"></i> 4 Seats</span>
+          </div>
+          <div class="car__info">
+            <div class="car__row"><h3>Swift Dzire</h3><span class="car__rate">₹12<small>/km</small></span></div>
+            <p>Budget-friendly comfort for couples &amp; small families.</p>
+            <div class="car__feat"><span>AC</span><span>Music</span><span>Boot Space</span></div>
+          </div>
+        </article>
+
+        <article class="car reveal" data-d="2" data-cursor="hover">
+          <div class="car__photo">
+            <img src="assets/fleet/ertiga.jpg" alt="Maruti Suzuki Ertiga MUV" loading="lazy" />
+            <span class="car__type">MUV</span>
+            <span class="car__seats"><i data-ic="user"></i> 6+1 Seats</span>
+          </div>
+          <div class="car__info">
+            <div class="car__row"><h3>Ertiga <em>(New)</em></h3><span class="car__rate">₹14<small>/km</small></span></div>
+            <p>Spacious 7-seater, ideal for mid-size family pilgrimages.</p>
+            <div class="car__feat"><span>AC</span><span>Extra Legroom</span><span>USB</span></div>
+          </div>
+        </article>
+
+        <article class="car car--pop reveal" data-d="3" data-cursor="hover">
+          <span class="car__ribbon">★ Traveller Favourite</span>
+          <div class="car__photo">
+            <img src="assets/fleet/innova.jpg" alt="Toyota Innova Crysta premium MUV" loading="lazy" />
+            <span class="car__type">Premium</span>
+            <span class="car__seats"><i data-ic="user"></i> 6+1 Seats</span>
+          </div>
+          <div class="car__info">
+            <div class="car__row"><h3>Innova Crysta</h3><span class="car__rate">₹20<small>/km</small></span></div>
+            <p>Luxury, silence &amp; a smooth highway ride for long tours.</p>
+            <div class="car__feat"><span>Push AC</span><span>Recliners</span><span>Premium</span></div>
+          </div>
+        </article>
+
+        <article class="car reveal" data-d="2" data-cursor="hover">
+          <div class="car__photo">
+            <img src="assets/fleet/tempo.jpg" alt="Tempo Traveller for groups" loading="lazy" />
+            <span class="car__type">Group</span>
+            <span class="car__seats"><i data-ic="user"></i> 12+1 Seats</span>
+          </div>
+          <div class="car__info">
+            <div class="car__row"><h3>Tempo Traveller</h3><span class="car__rate">₹30<small>/km</small></span></div>
+            <p>Perfect for large families &amp; group temple yatras.</p>
+            <div class="car__feat"><span>Push-back</span><span>AC</span><span>Luggage</span></div>
+          </div>
+        </article>
+
+        <article class="car reveal" data-d="3" data-cursor="hover">
+          <div class="car__photo">
+            <img src="assets/fleet/urbania.jpg" alt="Luxury van for premium groups" loading="lazy" />
+            <span class="car__type">Luxury Van</span>
+            <span class="car__seats"><i data-ic="user"></i> 10+ Seats</span>
+          </div>
+          <div class="car__info">
+            <div class="car__row"><h3>Urbania</h3><span class="car__rate">₹40<small>/km</small></span></div>
+            <p>Modern luxury van with captain seats for premium groups.</p>
+            <div class="car__feat"><span>Captain Seats</span><span>Ambient</span><span>Premium</span></div>
+          </div>
+        </article>
+
+        <article class="car car--cta reveal" data-d="4" data-cursor="hover">
+          <div class="car__cta-inner">
+            <h3>Need something specific?</h3>
+            <p>Tell us your group size &amp; we'll match the perfect vehicle.</p>
+            <a class="btn btn--primary btn--sm wa-link" data-msg="Hi, I need help choosing the right car for my trip." data-cursor="hover">Ask an Expert</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFF -->
+  <section class="section tariff" id="fares">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Transparent Pricing</span>
+        <h2 class="section__title reveal" data-d="2">Fares &amp; Tariff</h2>
+        <p class="section__lead reveal" data-d="3">
+          Clear, upfront rates with zero hidden charges. Prices below are indicative from Jamnagar —
+          your final fare is confirmed at the time of booking.
+        </p>
+      </div>
+
+      <div class="tariff__grid">
+        <div class="tariff__card reveal">
+          <h3><i data-ic="route"></i> One-Way Outstation</h3>
+          <table class="tariff__table">
+            <thead><tr><th>Route (from Jamnagar)</th><th>Sedan</th><th>SUV</th></tr></thead>
+            <tbody>
+              <tr><td>Dwarka</td><td>₹2,500</td><td>₹3,200</td></tr>
+              <tr><td>Somnath</td><td>₹3,800</td><td>₹4,600</td></tr>
+              <tr><td>Porbandar</td><td>₹2,400</td><td>₹3,000</td></tr>
+              <tr><td>Rajkot</td><td>₹1,800</td><td>₹2,300</td></tr>
+              <tr><td>Sasan Gir</td><td>₹3,200</td><td>₹3,900</td></tr>
+              <tr><td>Diu</td><td>₹4,200</td><td>₹5,000</td></tr>
+              <tr><td>Ahmedabad</td><td>₹5,000</td><td>₹6,000</td></tr>
+              <tr><td>Hirasar Airport</td><td>₹2,200</td><td>₹2,700</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tariff__card reveal" data-d="2">
+          <h3><i data-ic="car"></i> Round Trip</h3>
+          <table class="tariff__table">
+            <thead><tr><th>Route (from Jamnagar)</th><th>Sedan</th><th>SUV</th></tr></thead>
+            <tbody>
+              <tr><td>Dwarka</td><td>₹3,500</td><td>₹4,200</td></tr>
+              <tr><td>Somnath</td><td>₹5,500</td><td>₹6,500</td></tr>
+              <tr><td>Dwarka + Somnath</td><td>₹8,500</td><td>₹10,000</td></tr>
+              <tr><td>Gir + Somnath</td><td>₹7,500</td><td>₹8,800</td></tr>
+            </tbody>
+          </table>
+
+          <div class="tariff__perkm">
+            <h4>Per-KM Rates</h4>
+            <ul>
+              <li><span>Swift Dzire</span><b>₹12</b></li>
+              <li><span>Ertiga</span><b>₹14</b></li>
+              <li><span>Innova Crysta</span><b>₹20</b></li>
+              <li><span>Tempo Traveller</span><b>₹30</b></li>
+              <li><span>Urbania</span><b>₹40</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <ul class="tariff__notes reveal">
+        <li><i data-ic="tag"></i> Toll, parking &amp; state permit charges extra, as applicable.</li>
+        <li><i data-ic="route"></i> Minimum 300 km/day applies to outstation trips.</li>
+        <li><i data-ic="clock"></i> Fares may vary during peak season &amp; festivals.</li>
+        <li><i data-ic="shield"></i> Booking confirmation is subject to vehicle availability.</li>
+      </ul>
+
+      <div class="tariff__cta reveal">
+        <p>Need an exact quote for your route?</p>
+        <a class="btn btn--primary wa-link" data-msg="Hi Keshav Taxi, please share the exact fare for my route." data-cursor="hover">Get a Custom Quote <i data-ic="whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">The Keshav Promise</span>
+        <h2 class="section__title reveal" data-d="2">Why Travellers Trust Us</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why__card reveal">
+          <div class="why__ic"><i data-ic="shield"></i></div>
+          <h3>Safety First</h3>
+          <p>Verified drivers, sanitised cabs, live trip sharing &amp; fully insured vehicles.</p>
+        </div>
+        <div class="why__card reveal" data-d="2">
+          <div class="why__ic"><i data-ic="tag"></i></div>
+          <h3>Transparent Fares</h3>
+          <p>Fixed pricing agreed upfront. No hidden charges, no surge, no surprises.</p>
+        </div>
+        <div class="why__card reveal" data-d="3">
+          <div class="why__ic"><i data-ic="clock"></i></div>
+          <h3>Always On Time</h3>
+          <p>Punctual pickups, 24×7 support and instant confirmations on WhatsApp.</p>
+        </div>
+        <div class="why__card reveal" data-d="4">
+          <div class="why__ic"><i data-ic="star"></i></div>
+          <h3>Local Experts</h3>
+          <p>Drivers who know every temple, timing &amp; shortcut across Saurashtra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section steps">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Simple as 1-2-3</span>
+        <h2 class="section__title reveal" data-d="2">Book in Under a Minute</h2>
+      </div>
+      <div class="steps__grid">
+        <div class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Tell Us Your Plan</h3>
+          <p>Share your route, date &amp; group size via call or WhatsApp.</p>
+        </div>
+        <div class="step reveal" data-d="2">
+          <span class="step__n">02</span>
+          <h3>Get a Fixed Quote</h3>
+          <p>Receive an honest, all-inclusive fare and pick your vehicle.</p>
+        </div>
+        <div class="step reveal" data-d="3">
+          <span class="step__n">03</span>
+          <h3>Relax &amp; Ride</h3>
+          <p>Your chauffeur arrives on time. Enjoy a safe, blissful journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Voices of Our Travellers</span>
+        <h2 class="section__title reveal" data-d="2">1200+ Happy Journeys</h2>
+      </div>
+      <div class="reviews__grid">
+        <figure class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>Booked the Dwarka–Somnath circuit for my parents. Driver was polite, car was spotless and the fare was exactly as quoted. Highly recommended!</blockquote>
+          <figcaption><span class="review__ava">R</span> Rajesh Patel <em>· Ahmedabad</em></figcaption>
+        </figure>
+        <figure class="review reveal" data-d="2">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>Very comfortable Innova Crysta and a driver who knew all the temple timings. Made our pilgrimage completely stress-free.</blockquote>
+          <figcaption><span class="review__ava">M</span> Meena Shah <em>· Mumbai</em></figcaption>
+        </figure>
+        <figure class="review reveal" data-d="3">
+          <div class="review__stars">★★★★★</div>
+          <blockquote>On-time pickup at 5 AM, safe driving on the highway and a genuinely helpful team. Keshav Taxi is now our go-to in Gujarat.</blockquote>
+          <figcaption><span class="review__ava">S</span> Suresh Iyer <em>· Rajkot</em></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / CONTACT -->
+  <section class="section book" id="book">
+    <div class="container book__inner">
+      <div class="book__info reveal">
+        <span class="eyebrow">Let's Ride</span>
+        <h2 class="section__title">Book Your Tour Today</h2>
+        <p class="section__lead">Call us or drop your details — our team responds within minutes, every day of the year.</p>
+
+        <ul class="book__contacts">
+          <li>
+            <span class="book__ic"><i data-ic="phone"></i></span>
+            <div><small>Call / WhatsApp</small><a href="tel:+918140230020">+91 81402 30020</a></div>
+          </li>
+          <li>
+            <span class="book__ic"><i data-ic="mail"></i></span>
+            <div><small>Email</small><a href="mailto:booking@keshavtaxi.in">booking@keshavtaxi.in</a></div>
+          </li>
+          <li>
+            <span class="book__ic"><i data-ic="pin"></i></span>
+            <div><small>Based in</small><span>Jamnagar, Gujarat, India</span></div>
+          </li>
+        </ul>
+
+        <a class="btn btn--wa btn--block wa-link" data-msg="Hi Keshav Taxi, I'd like to book a tour." data-cursor="hover">
+          <i data-ic="whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+      <form class="book__form reveal" data-d="2" id="bookForm">
+        <div class="field">
+          <label>Full Name</label>
+          <div class="field__box"><i data-ic="user"></i><input type="text" name="name" placeholder="Your name" required /></div>
+        </div>
+        <div class="field field--half-row">
+          <div class="field">
+            <label>Phone</label>
+            <div class="field__box"><i data-ic="phone"></i><input type="tel" name="phone" placeholder="10-digit mobile" required /></div>
+          </div>
+          <div class="field">
+            <label>Travel Date</label>
+            <div class="field__box"><i data-ic="cal"></i><input type="date" name="date" /></div>
+          </div>
+        </div>
+        <div class="field field--half-row">
+          <div class="field">
+            <label>Destination</label>
+            <div class="field__box"><i data-ic="flag"></i>
+              <select name="to">
+                <option>Dwarka</option>
+                <option>Somnath</option>
+                <option>Dwarka + Somnath (Combined)</option>
+                <option>Nageshwar &amp; Bet Dwarka</option>
+                <option>Gir National Park</option>
+                <option>Custom Trip</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Vehicle</label>
+            <div class="field__box"><i data-ic="car"></i>
+              <select name="car">
+                <option>Swift Dzire</option>
+                <option>Ertiga (New)</option>
+                <option>Innova Crysta</option>
+                <option>Tempo Traveller</option>
+                <option>Urbania</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Message (optional)</label>
+          <div class="field__box field__box--area"><i data-ic="chat"></i>
+            <textarea name="note" rows="3" placeholder="Pickup time, no. of passengers, special requests…"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block" data-cursor="hover">
+          Send Booking Request <i data-ic="whatsapp"></i>
+        </button>
+        <p class="book__hint">You'll be redirected to WhatsApp with your details pre-filled.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="brand brand--footer">
+          <img src="assets/logo.png" alt="Keshav Taxi" class="brand__logo" onerror="this.remove()" />
+          <span class="brand__badge">
+            <svg viewBox="0 0 64 40" class="brand__car">
+              <path class="brand__car-body" d="M4 28c0-4 3-6 8-7l6-8c1.5-2 4-3 7-3h13c4 0 7 2 9 5l4 6c5 .8 9 3 9 7v3c0 1.6-1.4 3-3 3h-3a7 7 0 0 1-14 0H28a7 7 0 0 1-14 0h-6c-2.2 0-4-1.8-4-4z"/>
+              <circle class="brand__wheel" cx="21" cy="31" r="4.2"/>
+              <circle class="brand__wheel" cx="48" cy="31" r="4.2"/>
+            </svg>
+          </span>
+          <span class="brand__text"><strong>KESHAV</strong><em>TAXI</em></span>
+        </a>
+        <p>Premium cab &amp; tour service based in Jamnagar, Gujarat. Making your Dwarka &amp; Somnath pilgrimage safe, smooth and memorable since 2013.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#packages">Tour Packages</a>
+        <a href="#fleet">Our Fleet</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Popular Routes</h4>
+        <a class="wa-link" data-msg="Enquiry: Jamnagar to Dwarka">Jamnagar → Dwarka</a>
+        <a class="wa-link" data-msg="Enquiry: Jamnagar to Somnath">Jamnagar → Somnath</a>
+        <a class="wa-link" data-msg="Enquiry: Dwarka + Somnath circuit">Dwarka + Somnath</a>
+        <a class="wa-link" data-msg="Enquiry: Gir Safari tour">Jamnagar → Gir</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Reach Us</h4>
+        <a href="tel:+918140230020"><i data-ic="phone"></i> +91 81402 30020</a>
+        <a href="mailto:booking@keshavtaxi.in"><i data-ic="mail"></i> booking@keshavtaxi.in</a>
+        <span><i data-ic="pin"></i> Jamnagar, Gujarat</span>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <p>&copy; <span id="year"></span> Keshav Taxi. All rights reserved.</p>
+        <p class="footer__credits">Vehicle &amp; temple photos via <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA). Replace with your own for a personal touch.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating action buttons -->
+  <div class="fab">
+    <a class="fab__btn fab__btn--wa wa-link" data-msg="Hi Keshav Taxi, I'd like to book a cab." aria-label="WhatsApp" data-cursor="hover"><i data-ic="whatsapp"></i></a>
+    <a class="fab__btn fab__btn--call" href="tel:+918140230020" aria-label="Call" data-cursor="hover"><i data-ic="phone"></i></a>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
