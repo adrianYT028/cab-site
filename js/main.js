@@ -140,7 +140,7 @@
     el.style.cursor = 'pointer';
     el.addEventListener('click', ev => {
       ev.preventDefault();
-      const msg = el.dataset.msg || 'Hi Keshav Taxi, I have an enquiry.';
+      const msg = el.dataset.msg || 'Hi Karancab, I have an enquiry.';
       window.open(waURL(msg), '_blank');
     });
   });
@@ -161,7 +161,7 @@
     e.preventDefault();
     const f = e.target;
     const msg =
-      `*Fare Enquiry — Keshav Taxi*\n` +
+      `*Fare Enquiry — Karancab*\n` +
       `• Pickup: ${f.from.value}\n` +
       `• Destination: ${f.to.value}\n` +
       `• Car: ${f.car.value}\n` +
@@ -181,7 +181,7 @@
       return;
     }
     const msg =
-      `*New Booking Request — Keshav Taxi*\n` +
+      `*New Booking Request — Karancab*\n` +
       `• Name: ${f.name.value}\n` +
       `• Phone: ${f.phone.value}\n` +
       `• Destination: ${f.to.value}\n` +

@@ -1,6 +1,6 @@
-# Keshav Taxi — Website
+# Karancab — Website
 
-Premium static website for **Keshav Taxi**, Jamnagar. Built for Dwarka & Somnath pilgrimage tours.
+Premium static website for **Karancab**, Jamnagar. Built for Dwarka & Somnath pilgrimage tours.
 
 ## Run it
 Just open `index.html` in any browser. No build step, no dependencies — it's a pure static site (HTML + CSS + vanilla JS).
@@ -25,7 +25,7 @@ Open `js/main.js` (top of file) and `index.html`:
 | What | Where |
 |------|-------|
 | Phone number | `WHATSAPP_NUMBER` & `PHONE` in `js/main.js`; `tel:` + `+91 81402 30020` in `index.html` |
-| Email | `booking@keshavtaxi.in` throughout `index.html` (placeholder — you sent "NEW") |
+| Email | `Karancab0@gmail.com` throughout `index.html` (placeholder — you sent "NEW") |
 | Prices | `.pkg__price` values in the Packages section of `index.html` |
 | Package/route details | Packages + Popular Routes sections |
 
@@ -35,7 +35,7 @@ To use your uploaded logo image instead:
 1. Save your logo as `assets/logo.png`.
 2. In `index.html`, replace the `<span class="brand__badge">…</span>` SVG with:
    ```html
-   <img src="assets/logo.png" alt="Keshav Taxi" class="brand__badge" style="object-fit:contain" />
+   <img src="assets/logo.png" alt="Karancab" class="brand__badge" style="object-fit:contain" />
    ```
 
 ## Notes

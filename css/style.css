@@ -344,7 +344,10 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(.7)}
 .pkg__meta{display:flex;gap:18px;color:var(--muted);font-size:13.5px;margin-bottom:18px}
 .pkg__meta li{display:inline-flex;align-items:center;gap:6px}
 .pkg__meta [data-ic]{color:var(--yellow)}
-.pkg__foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px}
+.pkg__foot{display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--line);padding-top:16px}
+.pkg__actions{display:flex;gap:10px}
+.pkg__actions .btn{flex:1}
+.grand__btns{display:flex;gap:12px;flex-wrap:wrap}
 .pkg__price{font-family:var(--font-alt);font-size:26px;font-weight:700;color:var(--white)}
 .pkg__price small{display:block;font-size:11px;color:var(--muted);font-weight:400;letter-spacing:1px}
 .pkg--feature{border-color:rgba(212,175,81,.35);box-shadow:0 0 40px -20px rgba(212,175,81,.5)}
